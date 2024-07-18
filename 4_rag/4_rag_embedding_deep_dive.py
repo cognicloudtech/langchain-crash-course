@@ -18,7 +18,7 @@ if not os.path.exists(file_path):
     )
 
 # Read the text content from the file
-loader = TextLoader(file_path)
+loader = TextLoader(file_path, encoding="utf-8")
 documents = loader.load()
 
 # Split the document into chunks
